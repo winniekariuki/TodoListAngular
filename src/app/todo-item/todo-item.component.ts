@@ -16,7 +16,12 @@ export class TodoItemComponent implements OnInit {
   ngOnInit() {}
 
   removeItem() {
-    this.remove.emit(this.item);
+    console.log(this.item);
+    const itemTitle = this.item.title && this.item.title.substring(0, 30);
+    const deleteAction = confirm(`Proceed to delete todo? (${itemTitle}...)`);
+    if (deleteAction) {
+      this.remove.emit(this.item);
+    }
   }
   completeItem() {
     this.update.emit({

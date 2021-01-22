@@ -2,7 +2,7 @@
     <span class="todo-title" [ngClass]="{ 'todo-complete': item.completed }">
       {{ item.title }}
     </span>
-    <input type="checkbox" class="todo-checkbox" checked (change)="completeItem()"/>
-
-    <button class="btn btn-red" (click)="removeItem()">remove</button>
+    <input type="checkbox" class="todo-checkbox"  [checked]="item.completed" (change)="completeItem()"/>
+    
+      <i class="material-icons md-18"  (click)="removeItem()">delete</i>
   </div>

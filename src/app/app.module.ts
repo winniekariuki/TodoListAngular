@@ -6,7 +6,8 @@ import { InputButtonUnitComponent } from './input-button-unit/input-button-unit.
 import { TodoItemComponent } from './todo-item/todo-item.component';
 import { ListManagerComponent } from './list-manager/list-manager.component';
 import { TodoListService } from './services/todo-list.service';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonHarness} from '@angular/material/button/testing';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +16,8 @@ import { TodoListService } from './services/todo-list.service';
     ListManagerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
   ],
   providers: [TodoListService],
   bootstrap: [AppComponent]

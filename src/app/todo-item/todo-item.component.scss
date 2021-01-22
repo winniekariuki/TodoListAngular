@@ -5,6 +5,7 @@
     line-height: 30px;
     display: flex;
     justify-content: space-between;
+    font-weight: 500;
   }
   
   .todo-checkbox {
@@ -19,4 +20,15 @@
 
   .todo-complete {
     text-decoration: line-through;
+    color: darkgray;
+  }
+  .material-icons.md-18 {
+   color:red;
+   cursor: pointer;
+   
+
+  }
+  .button{
+    background-color: white;
+    border: hidden;
   }
